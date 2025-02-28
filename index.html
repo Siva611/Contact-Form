@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="shortcut icon" href="./Images/IconCon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+    <div class="contact-container">
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+
+            <div class="contact-left-title">
+
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+
+            <input type="hidden" name="access_key" value="978eaa15-f21e-42a1-8daa-effd531bb42d">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+
+            <button type="submit">Submit <img src="./Images/arrow_icon.png"> </button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> t.sivanagu611@gmail.com.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#ffdad5,#fff7f9);
+    padding: 20px;
+}
+
+.contact-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 350px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+   border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left button{
+    display: felx;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+}
+.contact-left button img{
+    height: 13px;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+   
+}
+
+@media screen and (max-width: 768px) {
+    .contact-left {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    button {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-left-title h2 {
+        font-size: 20px;
+    }
+
+    .contact-inputs {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
